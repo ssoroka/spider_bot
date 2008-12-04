@@ -1,9 +1,17 @@
 = Spider bot
+ 	 
+a non-threaded spider bot that spiders a site with response time stats. easily extendable
 
+== Installation
+sudo gem install ssoroka-spider_bot
+
+== Usage 	 
+ 	 
 Usable in code or as executable!
 
 spider_bot http://www.example.com
 spider_bot http://0.0.0.0:3000
+
 
 
 Example as script/spider:
@@ -36,7 +44,7 @@ end
 spider = MySpider.new(:quiet => false)
 spider.start(ARGV[1])
 
-= Gem Requirements
+== Gem Requirements
 
 ssoroka-ansi
 mechanize
