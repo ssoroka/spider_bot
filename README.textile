@@ -16,34 +16,36 @@ Usable in code or as executable!
 
 
 Example as script/spider:
-  #!/usr/bin/env ruby
-  require 'rubygems'
-  require 'spider_bot'
+@
+    #!/usr/bin/env ruby
+    require 'rubygems'
+    require 'spider_bot'
 
-  class MySpider < SpiderBot
-    # override these for handling events
-    def on_page(page)
+    class MySpider < SpiderBot
+      # override these for handling events
+      def on_page(page)
+      end
+
+      def on_404(link)
+      end
+
+      def on_500(link)
+      end
+
+      # override these for changing how urls are classified as links
+      def off_site?(url)
+        url !~ /^\// # urls not starting with a /
+      end
+
+      def ignorable?(url)
+        url =~ /\/.*\..+/ && # files with extensions
+          url !~ /\.html$/ # but not html files
+      end
     end
 
-    def on_404(link)
-    end
-
-    def on_500(link)
-    end
-
-    # override these for changing how urls are classified as links
-    def off_site?(url)
-      url !~ /^\// # urls not starting with a /
-    end
-
-    def ignorable?(url)
-      url =~ /\/.*\..+/ && # files with extensions
-        url !~ /\.html$/ # but not html files
-    end
-  end
-
-  spider = MySpider.new(:quiet => false)
-  spider.start(ARGV[1])
+    spider = MySpider.new(:quiet => false)
+    spider.start(ARGV[1])
+@
 
 h2. Gem Requirements
 
