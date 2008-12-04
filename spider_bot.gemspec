@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = %q{spider_bot}
-  s.version = "0.9.0"
+  s.version = "0.9.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Steven Soroka"]
@@ -9,11 +9,11 @@ Gem::Specification.new do |s|
   s.description = %q{A non-threaded spider bot that spiders a site with response time stats. easily extendable}
   s.email = %q{ssoroka78@gmail.com}
   s.executables = ["spider_bot"]
-  s.extra_rdoc_files = ["bin/spider_bot", "lib/spider_bot.rb", "README"]
-  s.files = ["bin/spider_bot", "lib/spider_bot.rb", "Rakefile", "README", "Manifest", "spider_bot.gemspec"]
+  s.extra_rdoc_files = ["bin/spider_bot", "lib/spider_bot.rb", "README.rdoc"]
+  s.files = ["bin/spider_bot", "lib/spider_bot.rb", "Rakefile", "README.rdoc", "spider_bot.gemspec", "Manifest"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/ssoroka/spider_bot}
-  s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Spider_bot", "--main", "README"]
+  s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Spider_bot", "--main", "README.rdoc"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{spider_bot}
   s.rubygems_version = %q{1.2.0}
