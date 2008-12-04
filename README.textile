@@ -3,6 +3,7 @@ h1. Spider bot
 a non-threaded spider bot that spiders a site with response time stats. easily extendable
 
 h2. Installation
+
   sudo gem install ssoroka-spider_bot
 
 h2. Usage 	 
