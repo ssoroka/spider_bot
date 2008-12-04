@@ -1,11 +1,11 @@
-h1 Spider bot
+h1. Spider bot
  	 
 a non-threaded spider bot that spiders a site with response time stats. easily extendable
 
-h2 Installation
+h2. Installation
   sudo gem install ssoroka-spider_bot
 
-h2 Usage 	 
+h2. Usage 	 
  	 
 Usable in code or as executable!
 
@@ -44,7 +44,7 @@ Example as script/spider:
   spider = MySpider.new(:quiet => false)
   spider.start(ARGV[1])
 
-h2 Gem Requirements
+h2. Gem Requirements
 
 ssoroka-ansi
 mechanize
