@@ -47,5 +47,5 @@ Example as script/spider:
 
 h2. Gem Requirements
 
-ssoroka-ansi
-mechanize
+* ssoroka-ansi
+* mechanize
