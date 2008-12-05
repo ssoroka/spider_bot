@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 require 'rubygems'
-require 'lib/spider_bot'
+require File.join(File.dirname(__FILE__), %w(.. lib spider_bot))
 
 spider = SpiderBot.new(:quiet => false)
 spider.start(ARGV[1])

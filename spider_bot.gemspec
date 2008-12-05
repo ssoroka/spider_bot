@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = %q{spider_bot}
-  s.version = "0.9.1"
+  s.version = "0.9.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Steven Soroka"]

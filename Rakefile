@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('spider_bot', '0.9.1') do |p|
+Echoe.new('spider_bot', '0.9.2') do |p|
   p.description = 'A non-threaded spider bot that spiders a site with response time stats. easily extendable'
   p.url = 'http://github.com/ssoroka/spider_bot'
   p.author = 'Steven Soroka'
