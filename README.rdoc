@@ -8,12 +8,12 @@ a non-threaded spider bot that spiders a site with response time stats. easily e
 
 == Usage 	 
  	 
-Usable in code or as executable!
+Usable in code or from terminal:
 
-  spider_bot http://www.example.com
-  spider_bot http://0.0.0.0:3000
+  $ spider_bot http://www.example.com
+  $ spider_bot http://0.0.0.0:3000
 
-Example as script/spider:
+Code example of a custom spider script in script/spider:
 
   #!/usr/bin/env ruby
   require 'rubygems'
